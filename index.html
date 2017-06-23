@@ -80,16 +80,22 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Monsterrat", sans-serif}
       <div class="w3-padding-large">
       <h1>Contact</h1>
       <p class="w3-opacity">GET IN TOUCH</p>
-      <div class="w3-container w3-card-2 w3-padding-32 w3-white">
-        <div class="w3-section">
-          <label>Subject</label>
-          <input id="subject" class="w3-input" style="width:100%;" type="text" required="" name="Subject">
-        </div>
-        <div class="w3-section">
-          <label>Message</label>
-          <input id="message" class="w3-input" style="width:100%;" type="text" required="" name="Message">
-        </div>
-        <button id="sendEmail" type="submit" class="w3-button w3-teal w3-right">Send</button>
+      <form data-forge-name="contact-request" action='thankyou.html'>
+        <div class="w3-container w3-card-2 w3-padding-32 w3-white">
+          <div class="w3-section">
+            <label>Name</label>
+            <input id="name" class="w3-input" style="width:100%;" type="text" required="" data-forge-name="Name">
+          </div>
+          <div class="w3-section">
+            <label>Subject</label>
+            <input id="subject" class="w3-input" style="width:100%;" type="text" required="" data-forge-name="Subject">
+          </div>
+          <div class="w3-section">
+            <label>Message</label>
+            <input id="message" class="w3-input" style="width:100%;" type="text" required="" data-forge-name="Message">
+          </div>
+          <button type="submit" class="w3-button w3-teal w3-right">Send</button>
+        </form>
       </div>
     </div>
 
