@@ -82,10 +82,6 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Monsterrat", sans-serif}
       <p class="w3-opacity">GET IN TOUCH</p>
       <div class="w3-container w3-card-2 w3-padding-32 w3-white">
         <div class="w3-section">
-          <label>Name(optional)</label>
-          <input id="name" class="w3-input" style="width:100%;" type="text" required="" name="Name">
-        </div>
-        <div class="w3-section">
           <label>Subject</label>
           <input id="subject" class="w3-input" style="width:100%;" type="text" required="" name="Subject">
         </div>
@@ -176,10 +172,9 @@ I was involved in graphic user interface design for a systems software interface
 <script>
 $(function() { 
 	$("#sendEmail").click(function() {
-		var name = $("#name").val();
 		var subject = $("#subject").val();
 		var message = $("#message").val();
-		window.location.href = "mailto:bhawthorne@georgefox.edu?subject="+subject+"&body="+message;
+		window.location.href = "mailto:ben@ben-hawthorne.com?subject="+subject+"&body="+message;
 	});
 });
 </script>
