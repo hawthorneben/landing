@@ -26,6 +26,30 @@ function draw() {
     }
 }
 
+function keyPressed() {
+    var force;
+    switch (keyCode)
+    {
+        case LEFT_ARROW:
+            force = createVector(-1, 0);
+            break;
+        case RIGHT_ARROW:
+            force = createVector(1, 0);
+            break;
+        case UP_ARROW:
+            force = createVector(0, -1);
+            break;
+        case DOWN_ARROW:
+            force = createVector(0, 1);
+            break;
+    }
+
+    for (var i = 0; i < cells.length; i++)
+    {
+        cells[i].applyForce(force);
+    }
+}
+
 function mousePressed() {
     for (var i = 0; i < cells.length; i++) {
         var cell = cells[i];
