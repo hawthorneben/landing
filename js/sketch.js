@@ -29,6 +29,7 @@ function setup() {
 
 function draw() {
   values = [];
+  background('rgba(5, 5, 5, 0.2)');
   
   var xoff = 0;
   for (var j = 0; j < cols; j++) {
