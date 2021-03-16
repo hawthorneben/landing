@@ -27,6 +27,16 @@
 	z-index: 1;
 }
 
+span.label {
+	position: absolute;
+	margin: 50px 0 0 -55px;
+	opacity: 0.5;
+}
+
+span.label.fun {
+	padding-left: 20px;
+}
+
 .margin {
 	margin: 15px;
 }
